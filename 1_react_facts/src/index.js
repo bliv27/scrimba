@@ -1,49 +1,33 @@
-/**
-Challenge: 
+// Quiz!
 
-Part 2: 
-- Add a `header` element with a nested `nav` element. Inside the `nav`,
-  include a `img` element with the image of the React logo inside
-  (src="./react-logo.png") and make sure to set the width to something
-  more manageable so it doesn't take up the whole screen
-- Add an `h1` with some text describing the page. (E.g. "Reasons
-  I'm excited to learn React"). Place it above the ordered list.
-- Add a `footer` after the list that says: 
-    "© 20xx <last name here> development. All rights reserved."
+// 1. What is a React component?
 
- */
+// a jsx function that returns something to the page
 
-import ReactDOM from 'react-dom/client'
+// 2. What's wrong with this code?
+// ```
+// function myComponent() {
+//     return (
+//         <small>I'm tiny text!</small>
+//     )
+// }
+// ```
 
-function Header(){
-  return(
-    <nav>
-      <img src='./react-logo.png' width="40px" />
-    </nav>
-  )
-}
+//its not pascal case MyComponent would be correct
 
-function Footer(){
-  return(
-    <p>© 2023 Raffin development. All rights reserved.</p>
-  )
-}
+// 3. What's wrong with this code?
+// ```
+// function Header() {
+//     return (
+//         <header>
+//             <nav>
+//                 <img src="./react-logo.png" width="40px" />
+//             </nav>
+//         </header>
+//     )
+// }
 
-function Page(){
-  return (
-    <div>
-      <Header />
-      <h1>Reasons why I want to learn React</h1>
-      <ol>
-        <li>one </li>
-        <li>two</li>
-        <li>three</li>
-      </ol>
-      <Footer />
-    </div>
-  )
-}
+// ReactDOM.render(Header(), document.getElementById("root"))
+// ```
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<Page />)
+// to declare a Header() function it should be <Header />
