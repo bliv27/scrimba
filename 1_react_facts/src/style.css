@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background-color: #282D35;
   font-family: Inter, sans-serif;
 }
 
@@ -33,4 +34,25 @@ nav{
   font-weight: 600;
   font-size: 16px;
   color:#DEEBF8;
+}
+
+main{
+  padding:57px 27px;
+  color:white;
+}
+
+.main--title{
+  font-size: 39.06px;
+  margin:0;
+  letter-spacing: -0.05em;
+}
+
+.main--list{
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main--list li{
+  line-height: 19px;
+  padding:10px 0;
 }
