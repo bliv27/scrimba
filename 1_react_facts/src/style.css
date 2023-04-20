@@ -1,3 +1,36 @@
-h1{
-  font-family: Inter;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:91px;
+  background-color: #21222A;
+  padding:30px 25px;
+}
+
+.nav--icon{
+  width:28.93px;
+  height:28.93px;
+  margin-right:7px;
+}
+
+.nav--logo_text{
+  font-weight: 700;
+  font-size: 22.25px;
+  color: #61DAFB;
+  margin-right:auto;
+}
+
+.nav--title{
+  font-weight: 600;
+  font-size: 16px;
+  color:#DEEBF8;
 }
