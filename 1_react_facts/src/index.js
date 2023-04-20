@@ -1,35 +1,26 @@
-/*
-Challenge: Starting from scratch, build and render the 
-HTML for our section project. Check the Google slide for 
-what you're trying to build.
+// 1. Why do we need to `import React from "react"` in our files?
 
-We'll be adding styling to it later.
+// jsx syntax is required 
 
-Hints:
-* The React logo is a file in the project tree, so you can
-  access it by using `src="./react-logo.png" in your image
-  element
-* You can also set the `width` attribute of the image element
-  just like in HTML. In the slide, I have it set to 40px
- */
+// 2. If I were to console.log(page) in index.js, what would show up?
 
-import ReactDOM from "react-dom/client"
+// an object that contains a list of all the properties of the jsx
 
-const page = (
-  <div>
-    <img src="/react-logo.png" style={{width:40}} />
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100k stars on Github</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-  </div>
-)
+// 3. What's wrong with this code:
+// ```
+// const page = (
+//     <h1>Hello</h1>
+//     <p>This is my website!</p>
+// )
+// ```
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(
-  page
-)
+// there can only be 1 element in a jsx object with as many children as they need
+
+// 4. What does it mean for something to be "declarative" instead of "imperative"?
+
+// declarative tells the computer how to render and it figures it out, 
+// imperative means you need to explain every step of a process
+
+// 5. What does it mean for something to be "composable"?
+
+// create a larger thing out of many smaller components
