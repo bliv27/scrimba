@@ -1,40 +1,35 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
+/*
+Challenge: Starting from scratch, build and render the 
+HTML for our section project. Check the Google slide for 
+what you're trying to build.
 
-/**
-Challenge: find out what happens if we try to append JSX
-to our div#root using .append() instead of ReactDOM
+We'll be adding styling to it later.
 
-1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
-2. Select the div with the ID of "root" and use `.append()` to append
-   your JSX
-3. See if you can guess what will show up in the browser before running
-   the code
-4. See if you can explain what actually shows up in the browser
+Hints:
+* The React logo is a file in the project tree, so you can
+  access it by using `src="./react-logo.png" in your image
+  element
+* You can also set the `width` attribute of the image element
+  just like in HTML. In the slide, I have it set to 40px
  */
+
+import ReactDOM from "react-dom/client"
 
 const page = (
   <div>
-    <h1>test</h1>
+    <img src="/react-logo.png" style={{width:40}} />
+    <h1>Fun facts about React</h1>
     <ul>
-      <li>test1</li>
-      <li>test2</li>
+      <li>Was first released in 2013</li>
+      <li>Was originally created by Jordan Walke</li>
+      <li>Has well over 100k stars on Github</li>
+      <li>Is maintained by Facebook</li>
+      <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ul>
-    <p>paragraph here</p>
   </div>
 )
-
-// document.getElementById("root").append(JSON.stringify(page))
-
-/**
-Challenge: fix our code!
-
-Don't forget, you're not using CDNs anymore, so there's no
-global "ReactDOM" variable to use anymore.
- */
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   page
 )
-
