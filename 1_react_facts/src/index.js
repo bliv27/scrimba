@@ -1,33 +1,63 @@
-// Quiz!
 
-// 1. What is a React component?
+import ReactDOM from "react-dom/client"
 
-// a jsx function that returns something to the page
+/**
+Mini Challenge:
+Move the `header` element from Page into 
+its own component called "Header"
+*/
 
-// 2. What's wrong with this code?
-// ```
-// function myComponent() {
-//     return (
-//         <small>I'm tiny text!</small>
-//     )
-// }
-// ```
+/**
+Challenge: 
 
-//its not pascal case MyComponent would be correct
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
 
-// 3. What's wrong with this code?
-// ```
-// function Header() {
-//     return (
-//         <header>
-//             <nav>
-//                 <img src="./react-logo.png" width="40px" />
-//             </nav>
-//         </header>
-//     )
-// }
+function Header() {
+  return(
+    <header>
+      <nav>
+        <img src="./react-logo.png" width="40px" />
+      </nav>
+    </header>
+  )
+}
 
-// ReactDOM.render(Header(), document.getElementById("root"))
-// ```
+function Footer(){
+  return(
+    <footer>
+      <small>© 2021 Ziroll development. All rights reserved.</small>
+    </footer>
+  )
+}
 
-// to declare a Header() function it should be <Header />
+function MainContent(){
+  return(
+    <div>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li>It's a popular library, so I'll be 
+        able to fit in with the cool kids!</li>
+        <li>I'm more likely to get a job as a developer
+        if I know React</li>
+      </ol>
+    </div>
+  )
+}
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  )
+}
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
+  <Page />
+)
