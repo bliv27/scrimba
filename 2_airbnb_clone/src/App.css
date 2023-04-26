@@ -53,14 +53,22 @@ section{
   max-width:320px;
 }
 
+.cards__list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin-top:20px;
+}
+
 .card{
   width: 176px;
   font-size: 12px;
-  line-height: 13px;
   color:#222222;
   position: relative;
   display: flex;
   flex-direction: column;
+  flex:0 0 auto;
   margin-right:18px;
 }
 
@@ -82,6 +90,11 @@ section{
 
 .card__star{
   height:14px;
+}
+
+.card__title{
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card>p{
