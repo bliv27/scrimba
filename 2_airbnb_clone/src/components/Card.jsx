@@ -11,7 +11,10 @@ export default function Card(props) {
 
   return(
     <div className="card">
-      {badeText && <div className="card__status">{badeText}</div>}
+      {
+        badeText &&
+        <div className="card__status">{badeText}</div>
+      }
       <img 
         className="card__photo" 
         src={new URL("./../assets/"+props.coverImg, import.meta.url).href } 
@@ -23,7 +26,9 @@ export default function Card(props) {
         <span className="grey">{props.location}</span>
       </p>
       <p className="card__title">{props.title}</p>
-      <p className="card__price"><span className="bold">From ${props.price}</span> / person</p>
+      <p className="card__price">
+        <span className="bold">From ${props.price}</span> / person
+      </p>
     </div>
   )
 }
