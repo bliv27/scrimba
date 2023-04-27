@@ -25,6 +25,11 @@ body{
   margin-bottom: 44px;
 }
 
+.wrapper{
+  width: 470px;
+  margin:0 auto;
+}
+
 .card{
   display: flex;
   gap:20px;

@@ -11,7 +11,10 @@ function App() {
   return (
     <div>
       <Header />
-      {cards} 
+      <div className="wrapper">
+        {cards} 
+      </div>
+      
     </div>
   )
 }
